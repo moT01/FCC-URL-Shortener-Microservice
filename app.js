@@ -44,19 +44,10 @@ mongo.connect(url, function(err, db) {
 					if (err) throw err
 					
 					if (exists) { //if parameter is valid url
-						var count = 1;						
-						
-						while (count > 0) {
-							var newShort = Math.floor(Math.random() * 100000).toString();
-						
-							count = collection.count({'short': newShort});
-							
-							if (count == 0) {
-								collection.insert({'original': parameter, 'short': newShort});
-								res.json({'original': parameter, 'short': newShort});
-								console.log('New url entered - entry created in db');
-							} //end if (count == 0)					
-						} //end while (count > 0)
+						var newShort = Math.floor(Math.random() * 100000).toString();							
+						collection.insert({'original': parameter, 'short': newShort});
+						res.json({'original': parameter, 'short': newShort});
+						console.log('New url entered - entry created in db');
 					
 					} else { //if (!exists)
 						res.sendFile('index.html', { root: __dirname });

@@ -1,5 +1,5 @@
 ## FCC-URL-Shortener-Microservice
-##### URL Shortener Microservice project for [freecodecamp.com](https://www.freecodecamp.org/challenges/url-shortener-microservice)
+##### URL Shortener Microservice project for [freeCodeCamp](https://www.freecodecamp.org/)
 ##### Check it out [here](https://ash-airport.glitch.me/)
 
 <br/>
@@ -17,7 +17,7 @@
 
 ##### Technologies used to complete this project
 - HTML
-- Node.js
 - JavaScript
-- Express.js
+- Node
+- Express
 - MongoDB

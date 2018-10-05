@@ -20,4 +20,4 @@
 - JavaScript
 - Node
 - Express
-- MongoDB
+- Mongo
